@@ -1,10 +1,10 @@
 import React from "react"
-import { EndlessLogo } from "./components"
+import { TopBar } from "./components"
 
 function App() {
     return (
         <div className="App">
-            <EndlessLogo />
+            <TopBar />
         </div>
     )
 }

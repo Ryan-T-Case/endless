@@ -27,6 +27,48 @@ h6,
     font-family: "Lato", sans-serif;
 }
 
+/* Background colors */
+
+.bg-primary {
+    background-color: #47e4c2;
+}
+
+.bg-secondary {
+    background-color: #222222;
+}
+
+.bg-offWhite {
+    background-color: #f2f1ef;
+}
+
+/* Text Colors */
+
+.text-primary {
+    color: #47e4c2;
+}
+
+.text-secondary {
+    color: #222222;
+}
+
+.text-offWhite {
+    color: #f2f1ef;
+}
+
+/* Border Colors */
+
+.border-primary {
+    border-color: #47e4c2;
+}
+
+.border-secondary {
+    border-color: #222222;
+}
+
+.border-offWhite {
+    border-color: #f2f1ef;
+}
+
 /* Fonts */
 
 /* lato-100 - latin */
