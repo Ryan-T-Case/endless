@@ -2,6 +2,13 @@
 
 /* Global Styles */
 
+html,
+body,
+#root,
+.App {
+    height: 100%;
+}
+
 html {
     font-size: 16px;
 }
@@ -53,6 +60,10 @@ h6,
 
 .text-offWhite {
     color: #f2f1ef;
+}
+
+.text-white {
+    color: #ffffff;
 }
 
 /* Border Colors */

@@ -1,7 +1,7 @@
 import React from "react"
+
 import { EndlessLogo } from "../../components"
 import { Colors } from "../../utils"
-
 import "./index.css"
 
 export const TopBar = ({ backGroundColor = Colors.secondary }) => {

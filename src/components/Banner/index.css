@@ -1,0 +1,55 @@
+.banner {
+    width: 100%;
+    height: 65vw;
+    background-image: url("/assets/images/photo-couch.jpg");
+    background-size: cover;
+}
+
+.banner-container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.top-heading,
+.main-heading {
+    font-weight: 100;
+}
+
+.main-heading {
+    margin: 0;
+}
+
+.paragraph {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 520px) {
+    .banner-container {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .top-heading {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    .paragraph {
+        font-size: 0.75rem;
+        padding-right: 2%;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .banner {
+        background-image: url("/assets/images/photo-couch_2x.jpg");
+    }
+}

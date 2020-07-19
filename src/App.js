@@ -1,10 +1,11 @@
 import React from "react"
-import { TopBar } from "./components"
+import { TopBar, Banner } from "./components"
 
 function App() {
     return (
         <div className="App">
             <TopBar />
+            <Banner />
         </div>
     )
 }
