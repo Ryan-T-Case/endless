@@ -5,16 +5,12 @@ import { API } from "../../utils"
 export const HowItWorks = () => {
     const [steps, setSteps] = useState([])
 
-    const fetchStepsData = async () => {
-        const allSteps = await API.getAllSteps()
-
-        if (allSteps && allSteps.length) {
-            setSteps(allSteps)
-        }
-    }
-
     useEffect(() => {
-        fetchStepsData()
+        API.getAllSteps().then(stepsData => {
+            if (stepsData && stepsData.length) {
+                setSteps(stepsData)
+            }
+        })
     }, [])
 
     return (
