@@ -1,8 +1,13 @@
 import React from "react"
 
+import { Button } from "../../components"
 import "./index.css"
 
 export const Banner = () => {
+    const handleClickGetStarted = () => {
+        // TODO: A click event would need to be added here
+    }
+
     return (
         <div className="banner">
             <div className="banner-container text-white">
@@ -14,6 +19,7 @@ export const Banner = () => {
                     peripherals? How about never shooing at all? You'll get new
                     stuff on your doorstep &ndash; every month.
                 </p>
+                <Button label="Get Started" onClick={handleClickGetStarted} />
             </div>
         </div>
     )

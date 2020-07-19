@@ -1,0 +1,28 @@
+.button-primary {
+    background-color: #47e4c2;
+    color: #222222;
+    border: none;
+    border-radius: 16px;
+}
+
+.button-primary:hover {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.button-primary:active {
+    background-color: #e44769;
+    color: #222222;
+}
+
+.button-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt #222222;
+}
+
+@media screen and (max-width: 520px) {
+    .button-primary {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
+}
