@@ -3,6 +3,8 @@
     color: #222222;
     border: none;
     border-radius: 16px;
+    font-size: 1rem;
+    padding: 10px 30px;
 }
 
 .button-primary:hover {
@@ -11,18 +13,11 @@
 }
 
 .button-primary:active {
-    background-color: #e44769;
+    background-color: #98a8ae;
     color: #222222;
 }
 
 .button-primary:focus {
     outline: none;
-    box-shadow: 0 0 0 2pt #222222;
-}
-
-@media screen and (max-width: 520px) {
-    .button-primary {
-        font-size: 1rem;
-        padding: 10px 30px;
-    }
+    box-shadow: 0 0 0 1px #222222, 0 0 0 2px #ffffff;
 }

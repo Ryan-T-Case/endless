@@ -11,9 +11,8 @@
     box-sizing: border-box;
 }
 
-.top-heading,
 .main-heading {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .main-heading {
@@ -34,18 +33,17 @@
 
     .top-heading {
         font-size: 1rem;
-        line-height: 1.5rem;
         margin-top: 0;
         margin-bottom: 0.5rem;
     }
 
     .main-heading {
         font-size: 1.5rem;
+        letter-spacing: 0.24px;
     }
 
     .paragraph {
         font-size: 0.75rem;
-        padding-right: 2%;
         margin-bottom: 1rem;
     }
 }
