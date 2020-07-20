@@ -2,25 +2,33 @@
     width: 15%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
 
 .step-number {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     border-bottom: 2px solid #47e4c2;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .step-title {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
+    white-space: nowrap;
 }
 
 .step-body {
-    font-size: 0.75rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+    .step-card {
+        width: 28.5%;
+    }
 }
 
 @media screen and (max-width: 767px) {

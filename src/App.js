@@ -4,8 +4,10 @@ import { TopBar, Banner, HowItWorks } from "./components"
 function App() {
     return (
         <div className="App">
-            <TopBar />
-            <Banner />
+            <div>
+                <TopBar />
+                <Banner />
+            </div>
             <HowItWorks />
         </div>
     )

@@ -5,6 +5,7 @@
     border-radius: 16px;
     font-size: 1rem;
     padding: 10px 30px;
+    width: 180px;
 }
 
 .button-primary:hover {
@@ -13,7 +14,7 @@
 }
 
 .button-primary:active {
-    background-color: #98a8ae;
+    background-color: #969696;
     color: #222222;
 }
 

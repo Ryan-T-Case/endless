@@ -1,25 +1,48 @@
 .how-it-works {
     background-color: #f2f1ef;
     display: flex;
+    flex-direction: column;
     flex: 1 1 auto;
     width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+    letter-spacing: 0.24px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
 }
 
 .card-deck {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 15%;
-    padding-right: 15%;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0.75rem;
+    padding-bottom: 1.5rem;
     width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+    .card-deck {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .card-deck {
+        padding-left: 5%;
+        padding-right: 5%;
         flex-direction: column;
-        padding-left: 2%;
-        padding-right: 2%;
         align-items: center;
-        padding-top: 1.5rem;
+        padding-bottom: 0;
     }
 }

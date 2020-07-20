@@ -21,6 +21,7 @@ export const HowItWorks = () => {
 
     return (
         <div className="how-it-works">
+            <h2 className="title">How It Works</h2>
             <div className="card-deck">
                 {steps.length &&
                     steps.map(step => {
