@@ -1,3 +1,56 @@
+# Endless
+
+By [Ryan Case](https://github.com/Ryan-T-Case)
+
+A simple, single-page, responsive React application built as part of a Front End Developer technical interview challenge.
+
+Deployed at - [https://ryan-t-case.github.io/endless/](https://ryan-t-case.github.io/endless/)
+
+---
+
+## Getting Started
+
+1. Clone this repository locally
+    ```
+    git clone https://github.com/Ryan-T-Case/endless.git
+    ```
+2. Navigate to the repo directory and install all dependencies with yarn
+    ```
+    cd endless
+    yarn
+    ```
+3. And that's it! You can now run the app locally with `yarn start`
+
+---
+
+## Deployment
+
+This app can is currently hosted on Github Pages at [https://ryan-t-case.github.io/endless/](https://ryan-t-case.github.io/endless/). To deploy, you can run `yarn build` and then `yarn deploy`.
+
+---
+
+## Tests
+
+There is currently test coverage for the util methods in this app. They can be found in `src/utils/helpers`. Currently, there is only one util class, `StepUtils`. You can run tests by simply running `yarn test`.
+
+---
+
+## Discussion
+
+Endless is a single-page React application, built for a fictional company of the same name, as part of a technical interview challenge. The goal was to build the application based on the given comp below.
+
+![Endless Design Comp](./src/assets/images/development-challenge.png)
+
+The requirements were to create a functioning and responsive application with a minimal use of libraries and frameworks. This application was built using vanilla CSS for styling, and [moment.js](https://momentjs.com/) was the only JavaScript library used. Some theming was done in the root `index.css` file to cut down on redundancy. In this file, the [PostCSS Normalize](https://create-react-app.dev/docs/adding-css-reset/) that comes baked into [Create React App](https://github.com/facebook/create-react-app) has been imported.
+
+---
+
+## Connect with Me
+
+Don't be a stranger! You can find me on LinkedIn at [https://www.linkedin.com/in/ryan-t-case/](https://www.linkedin.com/in/ryan-t-case/)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -42,27 +95,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
