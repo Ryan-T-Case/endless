@@ -24,4 +24,12 @@ export class StepUtils {
 
         return latestVersionedContent
     }
+
+    static sortStepsByStepNumber(steps) {
+        const sortedSteps = steps.sort(
+            (s1, s2) => parseInt(s1.stepNumber) - parseInt(s2.stepNumber)
+        )
+
+        return sortedSteps
+    }
 }
