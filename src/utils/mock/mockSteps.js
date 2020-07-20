@@ -1,7 +1,7 @@
 export const mockStep1 = {
     id: "1",
     stepNumber: "1",
-    versionedContent: [
+    versionContent: [
         {
             title: "Step 1 v1",
             body: "This is a test body for Test v1",
@@ -18,7 +18,7 @@ export const mockStep1 = {
 export const mockStep2 = {
     id: "2",
     stepNumber: "2",
-    versionedContent: [
+    versionContent: [
         {
             title: "Step 2 v1",
             body: "This is a test body for Test v1",
@@ -35,7 +35,7 @@ export const mockStep2 = {
 export const mockStep3 = {
     id: "3",
     stepNumber: "3",
-    versionedContent: [
+    versionContent: [
         {
             title: "Step 3 v1",
             body: "This is a test body for Test v1",

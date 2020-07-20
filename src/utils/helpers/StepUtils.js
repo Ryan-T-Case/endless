@@ -1,28 +1,29 @@
 import moment from "moment"
 
 export class StepUtils {
-    static getLatestVersionedContent(step) {
-        // We grab the first versionedContent so we can compare it to the next
-        let latestVersionedContent = step.versionedContent[0]
+    static getLatestVersionContent(step) {
+        // We grab the first versionContent so we can compare it to the next
+        console.log(step)
+        let latestVersionContent = step.versionContent[0]
 
         // Since we have already grabbed the first versionContent, we can remove it
         // here before checking against the others
-        step.versionedContent.slice(1).forEach(versionData => {
+        step.versionContent.slice(1).forEach(versionData => {
             const currentVersionEffectiveDate = moment(
                 versionData.effectiveDate
             )
             const latestVersionEffectiveDate = moment(
-                latestVersionedContent.effectiveDate
+                latestVersionContent.effectiveDate
             )
 
             if (
                 currentVersionEffectiveDate.isAfter(latestVersionEffectiveDate)
             ) {
-                latestVersionedContent = versionData
+                latestVersionContent = versionData
             }
         })
 
-        return latestVersionedContent
+        return latestVersionContent
     }
 
     static sortStepsByStepNumber(steps) {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 
 import { API, StepUtils } from "../../utils"
+import { StepCard } from "../../components"
 import "./index.css"
 
 export const HowItWorks = () => {
@@ -22,7 +23,19 @@ export const HowItWorks = () => {
         <div className="how-it-works">
             <div className="card-deck">
                 {steps.length &&
-                    steps.map(step => <div>{step.stepNumber}</div>)}
+                    steps.map(step => {
+                        const latestVersionData = StepUtils.getLatestVersionContent(
+                            step
+                        )
+
+                        return (
+                            <StepCard
+                                stepNumber={step.stepNumber}
+                                title={latestVersionData.title}
+                                body={latestVersionData.body}
+                            />
+                        )
+                    })}
             </div>
         </div>
     )

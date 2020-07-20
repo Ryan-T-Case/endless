@@ -1,5 +1,7 @@
 import React from "react"
 
+import "./index.css"
+
 export const StepCard = ({ stepNumber, title, body }) => {
     const getFormattedStepNumber = () => {
         return `0${stepNumber}`

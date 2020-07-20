@@ -2,11 +2,10 @@ import { StepUtils } from "../StepUtils"
 import { mockStep1, mockStep2, mockStep3 } from "../../mock"
 
 describe("StepUtils Tests", () => {
-    describe("getLatestVersionedContent Tests", () => {
+    describe("getLatestVersionContent Tests", () => {
         it("Given a step with multiple versions, returns the latest version", () => {
-            const expectedLatestVersionTitle =
-                mockStep1.versionedContent[1].title
-            const actualLatestVersion = StepUtils.getLatestVersionedContent(
+            const expectedLatestVersionTitle = mockStep1.versionContent[1].title
+            const actualLatestVersion = StepUtils.getLatestVersionContent(
                 mockStep1
             )
 
