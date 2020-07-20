@@ -31,6 +31,7 @@ export const HowItWorks = () => {
 
                         return (
                             <StepCard
+                                key={step.id}
                                 stepNumber={step.stepNumber}
                                 title={latestVersionData.title}
                                 body={latestVersionData.body}

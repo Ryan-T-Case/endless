@@ -3,7 +3,6 @@ import moment from "moment"
 export class StepUtils {
     static getLatestVersionContent(step) {
         // We grab the first versionContent so we can compare it to the next
-        console.log(step)
         let latestVersionContent = step.versionContent[0]
 
         // Since we have already grabbed the first versionContent, we can remove it
