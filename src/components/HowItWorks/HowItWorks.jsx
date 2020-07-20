@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-import { API } from "../../utils"
+import { API, StepUtils } from "../../utils"
 import "./index.css"
 
 export const HowItWorks = () => {
@@ -9,7 +9,11 @@ export const HowItWorks = () => {
     useEffect(() => {
         API.getAllSteps().then(stepsData => {
             if (stepsData && stepsData.length) {
-                setSteps(stepsData)
+                const unsortedSteps = stepsData
+                const sortedSteps = StepUtils.sortStepsByStepNumber(
+                    unsortedSteps
+                )
+                setSteps(sortedSteps)
             }
         })
     }, [])
